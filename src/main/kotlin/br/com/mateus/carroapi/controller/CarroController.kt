@@ -23,10 +23,4 @@ class CarroController(){
     fun salvar(@RequestBody carro: Carro){
         carroService.salvar(carro)
     }
-
-    @DeleteMapping
-    fun deletar(){
-        carroService.deletar()
-    }
-
 }
