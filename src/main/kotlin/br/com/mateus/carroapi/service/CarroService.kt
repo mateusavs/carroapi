@@ -30,7 +30,7 @@ class CarroService{
         carroRepository.save(carro)
     }
 
-    fun deletar(marca: String){
-        carroRepository.deleteByMarca("marca")
+    fun deletar(){
+        carroRepository.deleteByMarca("Porsche")
     }
 }
