@@ -12,4 +12,6 @@ interface CarroRepository : MongoRepository<Carro, String>{
     fun findByMarcaContaining(marca: String): List<Carro>
 
     fun findByPlaca(placa: String): Carro
+
+    fun deleteByMarca(marca: String)
 }
