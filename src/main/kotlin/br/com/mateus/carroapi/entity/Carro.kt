@@ -8,7 +8,8 @@ import org.springframework.data.mongodb.core.mapping.Document
 data class Carro(@Id var placa: String,
                  var marca: String,
                  var modelo: String,
-                 var ano: Int){
+                 var ano: Int,
+                 var cor: String){
 
 /*    constructor(): this("",
                         "",
