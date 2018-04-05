@@ -29,4 +29,8 @@ class CarroService{
     fun salvar(carro: Carro){
         carroRepository.save(carro)
     }
+
+    fun deletar(placa: String){
+        carroRepository.deleteById(placa)
+    }
 }
