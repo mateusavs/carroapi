@@ -20,8 +20,8 @@ class UsersController(){
     }
 
     @PostMapping
-    fun cadastrar(@RequestBody users: Users){
-        usersService.cadastrar(users)
+    fun salvarUser(@RequestBody users: Users){
+        usersService.salvarUser(users)
     }
 
 }

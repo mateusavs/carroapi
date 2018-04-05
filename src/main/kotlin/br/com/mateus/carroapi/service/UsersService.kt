@@ -18,7 +18,7 @@ class UsersService{
     fun buscarTodosOsUsers() : List<Users>{
         return usersRepository.findAll()
     }
-    fun cadastrar(users: Users){
+    fun salvarUser(users: Users){
         usersRepository.save(users)
     }
 }
