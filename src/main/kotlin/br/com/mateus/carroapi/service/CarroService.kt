@@ -19,7 +19,7 @@ class CarroService{
         return carroRepository.findByAno(ano)
     }
 
-    fun buscarCarroPorPlaca(placa: String): Carro{
+    fun buscarCarroPorPlaca(placa: String): Carro {
         return carroRepository.findByPlaca(placa)
     }
 

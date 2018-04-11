@@ -18,7 +18,10 @@ class CarroController(){
     fun buscarTodos() : List<Carro>{
         return carroService.buscarTodosOsCarros()
     }
-
+    @GetMapping("/find/{placa}")
+    fun buscarById(@PathVariable ("placa") placa: String): Carro{
+        return carroService.buscarCarroPorPlaca(placa)
+    }
     @PostMapping
     fun salvar(@RequestBody carro: Carro){
         carroService.salvar(carro)

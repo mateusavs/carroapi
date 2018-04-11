@@ -11,8 +11,8 @@ class UsersService{
     @Autowired
     lateinit var usersRepository: UsersRepository
 
-    fun buscarPorUser(users: String): List<Users>{
-        return usersRepository.findByUser(users)
+    fun buscarPorUser(user: String): Users{
+        return usersRepository.findByUser(user)
     }
 
     fun buscarTodosOsUsers() : List<Users>{

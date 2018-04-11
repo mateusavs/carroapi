@@ -19,6 +19,11 @@ class UsersController(){
         return usersService.buscarTodosOsUsers()
     }
 
+    @GetMapping("/findUser/{user}")
+    fun buscarById(@PathVariable ("user") user: String): Users{
+        return usersService.buscarPorUser(user)
+    }
+
     @PostMapping
     fun salvarUser(@RequestBody users: Users){
         usersService.salvarUser(users)
