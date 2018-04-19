@@ -27,7 +27,7 @@ class CarroController(){
         carroService.salvar(carro)
     }
 
-    @DeleteMapping(value = "/delete/{placa}")
+    @DeleteMapping("/delete/{placa}")
     fun deletar(@PathVariable ("placa") placa: String){
         carroService.deletar(placa)
     }
